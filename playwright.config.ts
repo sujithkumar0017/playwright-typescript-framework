@@ -1,4 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
+import { environment } from './src/config/environment';
+
 
 /**
  * Read environment variables from file.
@@ -29,7 +31,7 @@ export default defineConfig({
   },
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'https://practicesoftwaretesting.com',
+    baseURL: environment.baseURL,
 
     screenshot: 'only-on-failure',   //See failure state
 
