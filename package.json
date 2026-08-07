@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "description": "An enterprise-grade Playwright automation framework built with TypeScript.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "type-check": "tsc --noEmit"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sujithkumar0017/playwright-typescript-framework.git"
@@ -18,6 +24,7 @@
   "homepage": "https://github.com/sujithkumar0017/playwright-typescript-framework#readme",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.1.2"
+    "@types/node": "^26.1.2",
+    "typescript": "^7.0.2"
   }
 }
