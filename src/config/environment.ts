@@ -49,6 +49,8 @@ if (!process.env.BASE_URL) {
 interface EnvironmentConfig {
   name: EnvironmentName;
   baseURL: string;
+  userEmail: string;
+  userPassword: string;
 }
 
 /**
@@ -57,4 +59,6 @@ interface EnvironmentConfig {
 export const environment: EnvironmentConfig = {
   name: testEnv,
   baseURL: process.env.BASE_URL,
+  userEmail: process.env.USER_EMAIL!,
+  userPassword: process.env.USER_PASSWORD!,
 };
